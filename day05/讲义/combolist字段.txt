@@ -1,0 +1,14 @@
+dishAddList: []   ：  每个菜品分类对应的菜品数组
+setMealList: [],   ：  每个套餐的数组
+checkedList ：选中的菜品集合数组
+checkList ： 要添加的菜品数组集合
+dishTable ： 选中的菜品集合数组（多了选中菜品数量的字段copies）
+copies ： 选中菜品的数量
+
+
+
+js：
+getCategoryList : 查询套餐有什么分类，比如，儿童套餐、商务套餐
+getCategoryList：根据type=1 去category表查询菜品的分类有哪些   并且把分类id给到vue的一个变量数组：dishType
+queryDishList  ：根据分类id查询dish，将分类对应的菜品集合进行返回赋值给到vue的一个变量数组：dishAddList
+addSetmeal ：把表单数据ruleForm发请求添加套餐数据
